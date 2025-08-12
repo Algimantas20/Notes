@@ -1,4 +1,4 @@
-#include "Logger.hpp"
+#include "Utility/Logger.hpp"
 
 void Logger::Print(std::string text)
 {
@@ -22,6 +22,5 @@ void Logger::ColorPrint(std::string text, Color color)
 	std::string brace_text = text.substr(brace_start + 1, brace_end - brace_start - 1);
 	std::string after_brace = text.substr(brace_end + 1);
 
-	std::cout << before_brace << "\033[" << color_code << "m" << brace_text << "\033[0m" << after_brace << std::endl;
-	
+	std::cout << before_brace << "\033[" << color_code << "m" << brace_text << "\033[0m" << after_brace << std::endl;	
 }
