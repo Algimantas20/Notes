@@ -4,5 +4,5 @@
 
 int main()
 {
-	Logger::ColorPrint("Hello, {World}!", Logger::Color::Red);
+	Logger::DisplaySelectMenu(g_OperationTypeNames);
 }

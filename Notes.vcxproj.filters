@@ -18,12 +18,18 @@
     <ClCompile Include="Source Files\Notes.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source Files\Logger.cpp">
+    <ClCompile Include="Source Files\Utility\Logger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source Files\Commands.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header Files\Utility\Logger.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Header Files\Commands.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

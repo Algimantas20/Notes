@@ -125,10 +125,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source Files\Logger.cpp" />
+    <ClCompile Include="Source Files\Commands.cpp" />
+    <ClCompile Include="Source Files\Utility\Logger.cpp" />
     <ClCompile Include="Source Files\Notes.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Header Files\Commands.hpp" />
     <ClInclude Include="Header Files\Utility\Logger.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

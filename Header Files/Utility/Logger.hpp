@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include "Commands.hpp"
 class Logger
 {
 public:
@@ -30,4 +31,20 @@ public:
 	* @return void
 	*/
 	static void ColorPrint(std::string text, Color);
+	/*
+	* Displays a menu with options which can be selected by a user
+	* @param
+	*/
+	static void DisplaySelectMenu(std::unordered_map<std::string, OperationType> p_OperationTypeNames);
+	/*
+	* 
+	*/
+	static void ClearConsole();
+private:
+	static constexpr int m_KeyPrefix = 224;
+	static constexpr int m_KeyUp = 72;
+	static constexpr int m_KeyDown = 80;
+	static constexpr int m_KeyEnter = 13;
+
+	static void DrawMenu(std::vector<std::string> &keys, int selected);
 };
