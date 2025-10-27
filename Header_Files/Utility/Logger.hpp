@@ -8,6 +8,7 @@
 #include <vector>
 #undef max
 #undef min
+
 class Logger
 {
 public:
@@ -63,10 +64,12 @@ public:
 	*/
 	static void ClearPrevLines(const int line_count);
 	/*
-	*
+	* Get the validated user input from the terminal in the specified type
+	* @param text: the outputed text before the input "text: {input}"
+	* @return T
 	*/
 	template<typename T>
-	static T Input(const std::string& text)
+	static T& Input(const std::string& text)
 	{
 		T input;
 

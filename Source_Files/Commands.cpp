@@ -1,21 +1,21 @@
 #include "Commands.hpp"
+#include "Note.hpp"
 #include "Utility/Logger.hpp"
-
-
 
 std::unordered_map<std::string, std::function<void()>> g_OperationTypes
 {
-	{"Add",    []() { Commands::Add(); }},
-	{"Edit",   []() { Commands::Edit(); }},
-	{"Delete", []() { Commands::Delete(); }},
-	{"View",   []() { Commands::View(); }},
-	{"List",   []() { Commands::List(); }},
+	{"Add", Commands::Add},
+	{"Edit", Commands::Edit},
+	{"Delete", Commands::Delete},
+	{"View", Commands::View},
+	{"List", Commands::List},
 };
 
 void Commands::Add()
 {
-	auto input = Logger::Input<std::string>("Input the notes title");
-	Logger::Println(input);
+	auto& title = Logger::Input<std::string>("Input the notes title");
+	auto& description = Logger::Input<std::string>("Input the description");
+	Note note(title, description);
 }
 
 void Commands::Edit()

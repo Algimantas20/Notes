@@ -27,6 +27,9 @@
     <ClCompile Include="Header_Files\Note.hpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source_Files\Note.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header_Files\Utility\Logger.hpp">

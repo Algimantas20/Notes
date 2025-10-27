@@ -127,6 +127,7 @@
   <ItemGroup>
     <ClCompile Include="Header_Files\Note.hpp" />
     <ClCompile Include="Source_Files\Commands.cpp" />
+    <ClCompile Include="Source_Files\Note.cpp" />
     <ClCompile Include="Source_Files\Utility\Logger.cpp" />
     <ClCompile Include="Source_Files\main.cpp" />
   </ItemGroup>
