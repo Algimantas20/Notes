@@ -6,16 +6,18 @@
 #include <chrono>
 #include <ctime>
 
+using Json = nlohmann::json;
+
 class Note
 {
 public:
 	Note(std::string title, std::string content);
 	~Note() = default;
 
-	inline int get_Id() const { return m_Id; }
+	inline int Id() const { return m_Id; }
 	inline std::time_t created_at() const { return m_Created; }
-	inline std::string get_title() const { return m_Title; }
-	inline std::string get_Content() const { return m_Content; }
+	inline std::string title() const { return m_Title; }
+	inline std::string content() const { return m_Content; }
 
 	static void save_note(const Note& note);
 private:
@@ -25,4 +27,7 @@ private:
 	std::string m_Content;
 
 	static uint64_t generate_id();
+
+	friend void to_json(Json& json, const Note& note);
+	friend void from_json(Json& json, Note& note);
 };

@@ -133,6 +133,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Header_Files\Commands.hpp" />
+    <ClInclude Include="Header_Files\Utility\json.hpp" />
     <ClInclude Include="Header_Files\Utility\Logger.hpp" />
   </ItemGroup>
   <ItemGroup>

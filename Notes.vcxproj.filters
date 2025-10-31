@@ -38,6 +38,9 @@
     <ClInclude Include="Header_Files\Commands.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Header_Files\Utility\json.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
